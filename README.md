@@ -13,3 +13,20 @@ At least one option should be passed, if an option is not passed it will default
 Options can be passed with any order.
 
 ## Irb Example
+```ruby
+[1] pry(main)> require_relative 'password_generator'
+=> true
+[2] pry(main)> generator = PasswordGenerator.build(length: 10, uppercase: false)
+=> #<PasswordGenerator:0x0055ea9f0f9788
+ @password_maker=
+  #<PasswordMaker:0x0055ea9f0f97b0
+   @input_checker=#<InputChecker:0x0055ea9f0f97d8 @length=10, @lowercase=true, @number=true, @special=true, @uppercase=false>>>
+[3] pry(main)> generator.create_password
+=> "t0h3wl2@nk"
+```
+
+## Testing
+* navigate in the root of the folder
+* run: bundle install
+* run for unit testing: rspec
+* run for feature test: rspec spec/features/*
