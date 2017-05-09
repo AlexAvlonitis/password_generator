@@ -14,7 +14,7 @@ Options can be passed with any order.
 
 ## Irb Example
 ```ruby
-[1] pry(main)> require_relative 'password_generator'
+[1] pry(main)> require_relative 'lib/password_generator'
 => true
 [2] pry(main)> generator = PasswordGenerator.build(length: 10, uppercase: false)
 => #<PasswordGenerator:0x0055ea9f0f9788

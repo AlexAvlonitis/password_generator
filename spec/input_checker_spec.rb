@@ -1,5 +1,6 @@
-require_relative '../input_checker'
-require_relative '../errors'
+require 'spec_helper'
+require 'input_checker'
+require 'errors'
 
 describe InputChecker do
 

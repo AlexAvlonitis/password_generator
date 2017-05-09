@@ -1,4 +1,5 @@
-require_relative '../password_maker'
+require 'spec_helper'
+require 'password_maker'
 
 describe PasswordMaker do
   let(:subject) { described_class.new(input_checker) }

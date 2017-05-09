@@ -1,4 +1,5 @@
-require_relative '../password_generator'
+require 'spec_helper'
+require 'password_generator'
 
 describe PasswordGenerator do
   let(:subject) { described_class.new(password_maker) }
